@@ -38,7 +38,10 @@
 					<td th:text="${e.local}">Praia</td>
 					<td th:text="${e.data}">02/01/2023</td>
 					<td th:text="${e.horario}">19:00</td>
-					<td><a th:href="@{/eventos/{id}/remover(id=${e.id})}"><i class="material-icons">delete_forever</i></a></td>
+					<td>
+					<a th:href="@{/eventos/{id}/selecionar(id=${e.id})}"><i class="material-icons">border_color</i></a>
+					<a th:href="@{/eventos/{id}/remover(id=${e.id})}"><i class="material-icons">delete_forever</i></a>
+					</td>
 				</tr>
 			</tbody>
 
